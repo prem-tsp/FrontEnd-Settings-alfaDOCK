@@ -1,0 +1,65 @@
+<hello name="{{ name }}"></hello>
+<div class="box">
+   <div class="div1">1st
+
+     <!--Company-->
+     <button class="accordion">Company</button>
+     <div class="panel">
+       <a href = "#" (click) = "setLorem(); highlightLink();" class = "links" id = "0">
+          Company
+         </a>
+        
+       <a href = "#" (click) = "setButton(); highlightLink();" class = "links" id = "1">My Users</a>
+
+       <a href = "#" class = "links" (click) = "highlightLink();" id = "2">Connect</a>
+
+       <a href = "#" class = "links" (click) = "highlightLink();" id = "3">Customers</a>
+    
+     </div>
+
+       <!--Attributes-->
+     <button class="accordion">Attributes</button>
+     <div class="panel">
+       <a href = "#" class = "links" (click) = "highlightLink();" id = "4">Attributes</a>
+       
+        <a href = "#" class = "links" id = "5" (click) = "highlightLink();">BC Attributes</a>
+     </div>
+
+        <!--Manufacturing-->
+     <button class="accordion">Manufacturing</button>
+     <div class="panel">
+       <a href = "#" class = "links" id = "6" (click) = "highlightLink();">Process</a>
+       
+        <a href = "#" class = "links" id = "7" (click) = "highlightLink();">Material</a>
+
+        <a href = "#" class = "links" id = "8" (click) = "highlightLink();">Machine</a>
+
+        <a href = "#" class = "links" id = "9" (click) = "highlightLink();">Defect Code</a>
+     </div>
+
+         <!--Log-->
+       <button class="accordionwo" id="a1">Log</button>
+  
+         <!--Dashboard-->
+       <button class="accordionwo" id = "a2">
+       Dashboard</button>
+
+          <!--Socket-->
+       <button class="accordionwo" id = "a3">
+       Socket</button>
+
+         <!--General-->
+       <button class="accordionwo" id = "a4">     General</button>
+     
+   </div>
+   </div>
+   <div class="div2">2nd
+     <p *ngIf = "displayLorem" id = "lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nesciunt est magni ea, numquam excepturi sapiente. Consequatur officia deserunt nam ipsum? Doloribus, explicabo id. Eaque amet voluptatibus provident assumenda voluptatum.
+     </p>
+       <i *ngIf = "diplayIm"> I'm iron man *and dies*</i>
+      <button *ngIf = "displayBut" >Click Me!</button>
+   </div>
+       
+   <div class="clear">
+</div>
+

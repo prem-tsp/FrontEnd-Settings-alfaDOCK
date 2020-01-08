@@ -1,0 +1,134 @@
+div.box {
+  background: white;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif !important;
+  font-weight: 300;
+}
+
+div.div1 {
+  background: #DCDCDC	;
+  float: left;
+  height: 100%;
+  left: 5px;
+  width: 35%;
+}
+
+div.div2 {
+  margin-left: 50px;
+  background: white;
+  height: 100%;
+}
+p{
+  margin-left: 10px;
+}
+
+div.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  font-size: 0pt;
+  margin-top: -1px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  font-family: 'Segoe UI', sans-serif !important;
+  font-weight: boldest;
+  font-size: 1em;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+    border-color: #156090;
+    background: #186ba0;
+    color: #fff;
+}
+.accordion:hover:not(.active)
+{
+  background-color: #ccc;
+}
+.activate, .links:hover{
+  background-color: #ccc;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 2px 2px 2px 2px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  background: #eee;
+  width:auto;
+  height: 100%; 
+}
+
+ul{
+  list-style-type:none;
+}
+li{
+   width:100%;
+   height: 100%;
+}
+a:before {
+    content:'';
+    display: block;
+}
+a{
+     text-decoration: none; 
+     display: block;
+     padding: .5em 2em .5em 2em;
+     border-radius: 5px;
+     color: #212121;
+     font-size:1em;
+     margin: 2px 2px 2px 2px;
+     background: white;
+     border: black;
+}
+.accordion:after {
+  content: '\02192'; /* Unicode character for "plus" sign (+) */
+  font-size: 1em;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2193"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style for accordion without sub-items 
+*/
+.accordionwo {
+  font-family: 'Segoe UI', sans-serif !important;
+  font-weight: boldest;
+  font-size: 1em;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordionwo:hover:not(.activewo)
+{
+  background-color: #ccc;
+}
+
+.activewo{
+   border-color: #156090;
+    background: #186ba0;
+    color: #fff;
+}
