@@ -1,5 +1,5 @@
 div.box {
-  background: white;
+  background: white	;
   height: 100%;
   width: 100%;
   font-family: 'Segoe UI', sans-serif !important;
@@ -7,7 +7,7 @@ div.box {
 }
 
 div.div1 {
-  background: #DCDCDC	;
+  background: white;
   float: left;
   height: 100%;
   left: 5px;
@@ -19,9 +19,7 @@ div.div2 {
   background: white;
   height: 100%;
 }
-p{
-  margin-left: 10px;
-}
+
 
 div.clear {
   clear: both;
@@ -71,13 +69,6 @@ div.clear {
   height: 100%; 
 }
 
-ul{
-  list-style-type:none;
-}
-li{
-   width:100%;
-   height: 100%;
-}
 a:before {
     content:'';
     display: block;
@@ -132,3 +123,17 @@ a{
     background: #186ba0;
     color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+    .box {
+        display: none !important;
+    }
+
+    div.div2 {
+      margin-left: 30px;
+      background: white;
+      height: 100%;
+      width:100%;
+}
+}
+
